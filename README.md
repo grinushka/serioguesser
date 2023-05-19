@@ -18,15 +18,8 @@ Hope you enjoy it!
 
 ### Screenshots
 
-![Desktop preview](./desktop-preview.png)
-![Desktop preview / TV show info](./desktop-preview-2.png)
-
-### Links
-
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
-
-## My process
+![Desktop preview](./screenshots/desktop-first-level.png)
+![Desktop preview / TV show info](./screenshots/desktop-right-choice.png)
 
 ### Built with
 
