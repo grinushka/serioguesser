@@ -1,0 +1,28 @@
+@use '../abstracts/index' as *;
+
+.levels {
+  margin-bottom: 1rem;
+}
+
+.levels__pagination {
+  border-radius: 6px;
+  max-width: 100%;
+  border-collapse: collapse;
+  display: flex;
+  justify-content: space-between;
+  background-color: $secondary-color;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.level {
+  flex: auto;
+  text-align: center;
+  padding: 0.6em 2.3em;
+  background-color: $secondary-color;
+  filter: brightness(90%);
+}
+
+.level:hover {
+  filter: brightness(100%);
+}

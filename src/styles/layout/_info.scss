@@ -1,0 +1,67 @@
+@use '../abstracts/index'as *;
+
+.info {
+  padding: 1.2rem;
+  border-radius: 7px;
+  background-color: $add-color;
+  width: 60%;
+  border: 1px solid $border-color;
+}
+
+.info__content {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.info__details {
+  flex-grow: 1;
+}
+
+.info__photo {
+  border-radius: 7px;
+  max-width: 50%;
+  flex-grow: 1;
+}
+
+.info__name, .info__country{
+  width: 100%;
+  margin: 1rem 0;
+  border-bottom: 1px solid $border-color;
+}
+
+.sub-text {
+  font-size: 1.3rem;
+}
+
+.info__answer-btn {
+  display: none;
+  margin-top: 1rem;
+  border-radius: 5px;
+  border: 1px solid $secondary-color;
+  padding: 0.5rem 0.9rem;
+  background-color: transparent;
+  color: white;
+}
+
+@media (max-width: 1100px) {
+
+  .info__content {
+    flex-direction: column;
+  }
+
+  .info__photo {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+}
+
+@media (max-width: 800px) {
+
+  .info {
+    width: 100%;
+  }
+  
+}

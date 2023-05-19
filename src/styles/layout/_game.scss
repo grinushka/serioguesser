@@ -1,0 +1,29 @@
+@use '../abstracts/index' as *;
+
+
+.game {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  width: auto;
+}
+
+.choices {
+  flex-grow: 1;
+}
+
+.info {
+  flex-grow: 1;
+}
+
+@media (max-width: 800px) {
+
+  .game {
+    flex-direction: column;
+
+  }
+
+}
+

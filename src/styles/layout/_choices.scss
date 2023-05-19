@@ -1,0 +1,86 @@
+@use '../abstracts/index' as *;
+
+.choices {
+  border-radius: 7px;
+  background-color: $add-color;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid $border-color;
+  border-collapse: collapse;
+  padding: 1.2em;
+  width: 40%;
+}
+
+.checkbox {
+  padding: 0.8em 0;
+  border-bottom: 1px solid $border-color;
+}
+
+.checkbox:first-of-type {
+  padding-top: 0;
+}
+
+.checkbox:last-of-type {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+@keyframes pop {
+  0% {
+    opacity: 0;
+  }
+
+  75% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+.checkbox-pop {
+  display: none;
+}
+
+.checkbox-pop+label {
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 0.5rem;
+    height: 0.5rem;
+    background: transparent;
+    border: 2px solid $border-color;
+    margin-top: 0.15rem;
+  }
+}
+
+
+.checkbox-pop:checked+label {
+  &:before {
+    animation: pop .3s ease;
+    z-index: 100;
+    background: rgb(255, 208, 0);
+  }
+}
+
+label span {
+  margin: 0.6rem;
+  visibility: hidden;
+}
+
+@media (max-width: 800px) {
+
+  .choices {
+    width: 100%;
+  }
+
+}

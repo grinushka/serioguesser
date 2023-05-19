@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    <%= htmlWebpackPlugin.options.title %>
+  </title>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <header>
+      <div class="header__logo">
+        <p>Serioguesser</p>
+      </div>
+      <div class="header__score">
+        <p class="score">Score: <span class="score__number">0</span></p>
+
+      </div>
+    </header>
+
+    <section class="levels">
+      <ul class="levels__pagination">
+        <li class="level">Level 1</li>
+        <li class="level">Level 2</li>
+        <li class="level">Level 3</li>
+        <li class="level">Level 4</li>
+        <li class="level">Level 5</li>
+        <li class="level">Level 6</li>
+      </ul>
+
+    </section>
+
+    <section class="main">
+      <div class="main__img">
+        <img src="" alt="Series preview image" class="main-preview-img">
+      </div>
+      <div class="main__content">
+        <p class="main__title">******</p>
+        <audio controls class="main__audio">
+          <source src="" type="audio/mp3">
+        </audio>
+      </div>
+    </section>
+
+    <section class="game">
+
+      <div class="choices">
+        <ul class="choices__list">
+          <li class="checkbox">
+            <input class="checkbox-pop" type="radio" name="series" id="choice-1"/>
+            <label for="choice-1"><span></span></label>
+          </li>
+          <li class="checkbox">
+            <input class="checkbox-pop" type="radio" name="series" id="choice-2"/>
+            <label for="choice-2"><span></span></label>
+          </li>
+          <li class="checkbox">
+            <input class="checkbox-pop" type="radio" name="series" id="choice-3"/>
+            <label for="choice-3"><span></span></label>
+          </li>
+          <li class="checkbox">
+            <input class="checkbox-pop" type="radio" name="series" id="choice-4"/>
+            <label for="choice-4"><span></span></label>
+          </li>
+          <li class="checkbox">
+            <input class="checkbox-pop" type="radio" name="series" id="choice-5"/>
+            <label for="choice-5"><span></span></label>
+          </li>
+          <li class="checkbox">
+            <input class="checkbox-pop" type="radio" name="series" id="choice-6"/>
+            <label for="choice-6"><span></span></label>
+          </li>
+        </ul>
+      </div>
+
+      <div class="info">
+        <p class="sub-text">Listen to the intro and choose the right TV show &#9786</p>
+        <button class="info__answer-btn">Show the answer</button>
+
+        <div class="info__content">
+
+          <div class="info__photo">
+            <img src="" alt="Series preview image" class="info-preview-img">
+          </div>
+
+          <div class="info__details">
+            <h3 class="info__title">Name</h3>
+            <h5 class="info__country">Country</h5>
+            
+          </div>
+
+        </div>
+
+        <p class="info__description">There should be some kind of description...</p>
+      </div>
+
+    </section>
+
+    <section class="next">
+      <button class="next__btn">Next level</button>
+    </section>
+
+
+  </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+@use '../abstracts/index' as *;
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.header__logo {
+  font-size: 2rem;
+}
+
+@media (max-width: 400px) {
+
+  header {
+    flex-direction: column;
+  }
+
+  .score {
+    margin-top: 0.7rem;
+  }
+
+}

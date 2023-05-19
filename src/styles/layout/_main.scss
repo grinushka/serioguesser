@@ -1,0 +1,51 @@
+@use '../abstracts/index' as *;
+
+.main {
+  background-color: $add-color;
+  border-radius: 7px;
+  display: flex;
+  padding: 1rem;
+  gap: 2rem;
+  font-size: 2rem;
+  border: 1px solid $border-color;
+}
+
+.main__img {
+  align-self: center;
+  display: flex;
+  align-items: start;
+  border-radius: 7px;
+  width: 340px;
+  height: 175px;
+}
+
+.main__content {
+  width: 100%;
+}
+
+.main__title {
+  border-bottom: 1px solid $border-color;
+  margin-bottom: 1.2rem;
+  padding-bottom: 0.9rem;
+}
+
+
+@media (max-width: 800px) {
+
+  .main__title {
+    margin-bottom: 2rem;
+  }
+  
+  .main__title {
+    text-align: center;
+  }
+
+  .main__img {
+    height: 240px;
+    align-items: center;
+  }
+
+  .main {
+    flex-direction: column;
+  }
+}
