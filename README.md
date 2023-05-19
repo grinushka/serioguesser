@@ -3,7 +3,7 @@
 Go ahead and play the game if you love TV shows (well, who doesn't anyway?), that will show you how well you know the industry.
 I tried to do a mix up of the most well-know TV shows for the last 20 years or so, but there still might be some you do not not, because of the prejudices view and a want to put my favourites in here.
 
-Play the game: [Add solution URL here](https://your-solution-url.com)
+Play the game: [Add solution URL here](https://master--benevolent-sunburst-dbd4f5.netlify.app/)
 
 
 The same game logic may be applied to any other things with the distinctive melody and sound (music, cartoons, famous people voices etc.)
