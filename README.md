@@ -9,7 +9,9 @@ The same game logic may be applied to any other things with the distinctive melo
 
 Hope you enjoy it!
 
-### Challenges faced anf things learned during development
+Note: the project have not been finished yet, so some bugs may arise. Sorry! :)
+
+### Challenges faced and things learned during development
 
 - Keep both desktop, tablet and mobile version together, changing the layout with media queries and modern CSS features
 - Trying to keep JS consice
