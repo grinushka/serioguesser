@@ -1,6 +1,6 @@
 # Serioguesser 
 
-Note! This project is still in progress...
+Note! The project is still in progress and have not been finished yet. Sorry! :)
 
 Go ahead and play the game if you love TV shows (well, who doesn't anyway?), that will show you how well you know the industry.
 I tried to do a mix up of the most well-know TV shows for the last 20 years or so, but there still might be some you do not not, because of the prejudices view and a want to put my favourites in here.
@@ -8,10 +8,7 @@ I tried to do a mix up of the most well-know TV shows for the last 20 years or s
 [Play serioguesser 🎲](https://master--benevolent-sunburst-dbd4f5.netlify.app/)
 
 The same game logic may be applied to any other things with the distinctive melody and sound (music, cartoons, famous people voices etc.)
-
 Hope you enjoy it!
-
-Note: the project have not been finished yet, so some bugs may arise. Sorry! :)
 
 ### Challenges faced and things learned during development
 
