@@ -16,7 +16,6 @@
   align-items: start;
   border-radius: 7px;
   width: 340px;
-  height: 175px;
 }
 
 .main__content {
@@ -47,5 +46,11 @@
 
   .main {
     flex-direction: column;
+  }
+}
+
+@media  (max-width: 450px) {
+  .main__img {
+    max-width: 250px;
   }
 }
