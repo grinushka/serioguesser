@@ -24,13 +24,18 @@ const choicesInputs = document.querySelectorAll('.choices__list li input');
 const mainImg = document.querySelector('.main-preview-img');
 const infoImg = document.querySelector('.info-preview-img');
 const mainTitle = document.querySelector('.main__title');
+
 const infoTitle = document.querySelector('.info__title');
 const infoCountry = document.querySelector('.info__country');
 const infoDescription = document.querySelector('.info__description');
+
 const mainAudio = document.querySelector('.main__audio');
 const mainAudioSource = document.querySelector('.main__audio source');
+
 const nextBtn = document.querySelector('.next__btn');
 const showAnswerBtn = document.querySelector('.info__answer-btn');
+
+const scoreValue = document.querySelector('.score__value');
 
 nextBtn.addEventListener('click', () => {
   startLevel();
@@ -58,6 +63,7 @@ function startLevel() {
     // Implement showing the score modal window
     return;
   }
+  console.log(level);
 
   rightChoice = getRandomInt(1, 7);
   wonTheLevel = false;
@@ -70,6 +76,10 @@ function startLevel() {
   displayLevelAudio(rightChoice);
 
   renderChoices(level);
+
+  if (level > 1) {
+    subText.textContent = 'Do not forget, only one attempt... so listen carefully! 🌞';
+  } 
 }
 
 function higlightLevel() {
@@ -94,6 +104,8 @@ function checkTheChoice(e) {
     disableChoices();
     wonTheLevel = true;
     toggleButtonAttribute();
+    score++;
+    updateScore();
     level++;
   } else {
     disableChoices();
@@ -187,16 +199,18 @@ function showInfo() {
   subText.style.display = 'none';
 }
 
-// function toogleShowAnswerBtn() {
-//   console.log(showAnswerBtn.style.display);
-//   showAnswerBtn.style.display == 'block'
-//     ? (showAnswerBtn.style.display = 'none')
-//     : (showAnswerBtn.style.display = 'block');
-//   console.log(showAnswerBtn.style.display);
-// }
+function updateScore() {
+  scoreValue.textContent = `${score}`;
+}
 
+function startTheGame() {
+  updateScore();
+  startLevel();
+}
 
-startLevel();
+// startLevel();
+startTheGame();
+
 
 
 // ASSISTANCE FUNCTIONS
