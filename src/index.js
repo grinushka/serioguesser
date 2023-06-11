@@ -1,5 +1,5 @@
 import './styles/main.scss';
-import { gameData } from './js/data.js';
+import { gameData } from './data.js';
 
 // GLOBAL VARIABLES
 let level = 1;
@@ -190,13 +190,14 @@ function enableChoices() {
   });
 }
 
-//  Hide or show info block on the right
+//  Hide info block on the right
 function hideInfo() {
   infoContent.style.visibility = 'hidden';
   infoDescription.style.visibility = 'hidden';
   subText.style.removeProperty('display');
 }
 
+// Show info block on the right
 function showInfo() {
   infoContent.style.removeProperty('visibility');
   infoDescription.style.removeProperty('visibility');

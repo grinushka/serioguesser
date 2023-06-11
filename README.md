@@ -9,7 +9,7 @@ The same game logic may be applied to any other things with the distinctive melo
 
 Hope you enjoy it!
 
-Note: the project have not been finished yet, so some bugs may arise. Sorry! :)
+! Note: the project have not been finished yet, so some bugs may arise. Sorry! :)
 
 ### Challenges faced and things learned during development
 
@@ -40,8 +40,7 @@ Note: the project have not been finished yet, so some bugs may arise. Sorry! :)
 &nbsp;
 [![Codewars](https://img.shields.io/badge/Codewars-grinushka-red)](https://www.codewars.com/users/grinushka)
 &nbsp;
-[![Vk](https://img.shields.io/badge/Vk-follow-blue)](https://vk.com/grinushka)
-&nbsp;
+
 
 ### Notes
 

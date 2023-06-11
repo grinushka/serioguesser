@@ -25,7 +25,7 @@ export const gameData = [
       description: '',
 
       image: 'img/alexa-and-katie.jpg',
-      audio: 'audio/alexa-katie.mp3',
+      audio: 'audio/alexa-and-katie.mp3',
     },
     {
       id: 4,
@@ -43,7 +43,7 @@ export const gameData = [
       description: '',
 
       image: 'img/big-bang-theory.jpg',
-      audio: 'audio/big-bang.mp3',
+      audio: 'audio/big-bang-theory.mp3',
     },
     {
       id: 6,
@@ -109,7 +109,7 @@ export const gameData = [
       description: '',
 
       image: 'img/how-i-met-your-mother.jpg',
-      audio: 'audio/himym.mp3',
+      audio: 'audio/how-i-met-your-mother.mp3',
     },
   ],
 
@@ -139,7 +139,7 @@ export const gameData = [
       description: '',
 
       image: 'img/lost.jpg',
-      audio: 'audio/lost',
+      audio: 'audio/lost.mp3',
     },
     {
       id: 4,
@@ -165,7 +165,7 @@ export const gameData = [
       country: 'USA',
       description: '',
 
-      image: 'img/the-office.jpg',
+      image: 'img/office.jpg',
       audio: 'audio/office.mp3',
     },
   ],
