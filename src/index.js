@@ -5,7 +5,7 @@ import { gameData } from './data.js';
 let level = 1;
 let rightChoice;
 let wonTheLevel = false;
-let score;
+let score = 0;
 
 const images = importAll(
   require.context('./assets/img/', false, /\.(png|jpe?g|svg)$/)
@@ -45,18 +45,6 @@ showAnswerBtn.addEventListener('click', () => {
   showAnswerBtn.style.display = 'none';
 });
 
-// Main function to be executed when first opened
-// function startTheGame() {
-//   startLevel()
-//   // rightChoice = getRandomInt(1, 7);
-//   // console.log(rightChoice);
-
-//   // hideInfo();
-//   // toggleButtonAttribute();
-//   // enableChoices();
-//   // higlightLevel();
-//   // renderChoices(level);
-// }
 
 // Enable or disable next level btn, depending on the choice made and whether the answer has been shown
 function toggleButtonAttribute() {
@@ -67,7 +55,7 @@ function toggleButtonAttribute() {
 
 function startLevel() {
   if (level > 6) {
-    console.log('Your score is ...');
+    // Implement showing the score modal window
     return;
   }
 
@@ -80,8 +68,6 @@ function startLevel() {
   enableChoices();
   higlightLevel();
   displayLevelAudio(rightChoice);
-  console.log(JSON.stringify(audios));
-
 
   renderChoices(level);
 }
@@ -104,17 +90,14 @@ function checkTheChoice(e) {
 
   if (e.target.id.slice(-1) == rightChoice) {
     showInfo();
-    console.log('You got it!');
     displaySeriesInfo(rightChoice);
     disableChoices();
     wonTheLevel = true;
     toggleButtonAttribute();
     level++;
   } else {
-    console.log('I run..');
-    console.log(e.target);
     disableChoices();
-    console.log('Opps, try again');
+    subText.textContent = 'Opps! You may have misheard the intro...'
     showAnswerBtn.style.display = 'block';
   }
 }
